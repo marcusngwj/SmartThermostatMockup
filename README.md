@@ -11,5 +11,8 @@
 
 If you changed viewport at any point in time, please refresh to allow the thermostat to adjust to its new size
 
+## Example
+![screen_recording](docs/assets/screen_recording.gif)
+
 ## References
-Sources are acknowledged as comments in the code. Mostly references from stackoverflow and W3Schools.
+Sources are acknowledged as comments in the code. Most of them are referenced from stackoverflow and W3Schools.
