@@ -8,4 +8,4 @@ thermostatView = new ThermostatView(canvas);
 thermostatPresenter = new ThermostatPresenter(thermostatView, thermostatModel);
 
 // Simulate external factor affecting current temperature (measured temperature)
-thermostatModel.currentTemperature = 77;
+thermostatModel.currentTemperature = 72;

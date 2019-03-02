@@ -19,14 +19,6 @@ class ThermostatModel {
     this._updateMode = this._updateMode.bind(this);
   }
 
-  get deltaComfort() {
-    return this._deltaComfort;
-  }
-
-  get deltaBuffer() {
-    return this._deltaBuffer;
-  }
-
   get currentTemperature() {
     return this._currTemp;
   }
