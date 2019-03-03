@@ -5,9 +5,9 @@ class ThermostatPresenter {
     
     this._increaseTemperature = this._increaseTemperature.bind(this);
     this._decreaseTemperature = this._decreaseTemperature.bind(this);
-    this._presentUpdatedView = this._presentUpdatedView.bind(this);
+    this._updateView = this._updateView.bind(this);
 
-    this._model.callbackForModeChange = this._presentUpdatedView;
+    this._model.callbackWhenModeChange = this._updateView;
     this._presentInitialView();
   }
 
@@ -25,7 +25,7 @@ class ThermostatPresenter {
     this._view.addClickEventListener(this._decreaseTemperature, this._increaseTemperature);
   }
 
-  _presentUpdatedView () {
+  _updateView () {
     let temperature = this._model.targetTemperature;
     let mode = this._model.mode;
 

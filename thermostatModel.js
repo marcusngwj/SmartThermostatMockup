@@ -34,8 +34,8 @@ class ThermostatModel {
   /**
    * Set function to call back whenever the mode changes
    */
-  set callbackForModeChange(callback) {
-    this._callbackForModeChange = callback;
+  set callbackWhenModeChange(callback) {
+    this._callbackWhenModeChange = callback;
   }
 
   set currentTemperature(temperature) {
@@ -65,7 +65,7 @@ class ThermostatModel {
       this._mode = MODE_STATUS.OFF;
     }
 
-    this._callbackForModeChange();
+    this._callbackWhenModeChange();
   }
 
 }
