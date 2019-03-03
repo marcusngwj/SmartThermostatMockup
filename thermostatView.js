@@ -60,7 +60,7 @@ class ArrowButton {
 
 
 class ThermostatView {
-	constructor(canvas) {
+  constructor(canvas) {
     this._canvas = canvas;
     this._canvas.width = canvas.getBoundingClientRect().width;
     this._canvas.height = canvas.getBoundingClientRect().height;

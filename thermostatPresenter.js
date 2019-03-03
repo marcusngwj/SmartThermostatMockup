@@ -12,21 +12,21 @@ class ThermostatPresenter {
   }
 
   _increaseTemperature() {
-  	this._model.increaseTargetTemperature();
+    this._model.increaseTargetTemperature();
   }
 
   _decreaseTemperature() {
-  	this._model.decreaseTargetTemperature();
+    this._model.decreaseTargetTemperature();
   }
 
   _presentInitialView() {
-  	let initialTargetTemperature = this._model.targetTemperature;
-  	this._view.draw(initialTargetTemperature, COLOR.GREY);
-  	this._view.addClickEventListener(this._decreaseTemperature, this._increaseTemperature);
+    let initialTargetTemperature = this._model.targetTemperature;
+    this._view.draw(initialTargetTemperature, COLOR.GREY);
+    this._view.addClickEventListener(this._decreaseTemperature, this._increaseTemperature);
   }
 
   _presentUpdatedView () {
-  	let temperature = this._model.targetTemperature;
+    let temperature = this._model.targetTemperature;
     let mode = this._model.mode;
 
     if (mode === MODE_STATUS.COOLING) {
