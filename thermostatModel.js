@@ -12,7 +12,7 @@ class ThermostatModel {
     this._currTemp = temperature; // Measured temperature
     this._targetTemp = temperature; // Set Point
     this._mode = MODE_STATUS.OFF;
-    this._callbackForModeChange = null;
+    this._callbackWhenModeChange = null;
 
     this.increaseTargetTemperature = this.increaseTargetTemperature.bind(this);
     this.decreaseTargetTemperature = this.decreaseTargetTemperature.bind(this);
